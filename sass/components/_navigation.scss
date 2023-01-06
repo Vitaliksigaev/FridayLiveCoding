@@ -1,0 +1,15 @@
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation__link {
+    list-style: none;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    @extend %transition;
+    &:hover {
+        color: $color-primary;
+    }
+}
