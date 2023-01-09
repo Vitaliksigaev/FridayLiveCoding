@@ -2,6 +2,7 @@
 @import "base/normalize";
 
 
+
 @import "abstract/constants";
 @import "abstract/mixins";
 @import "abstract/placeholders";
@@ -11,6 +12,7 @@
 @import "base/buttons";
 @import "base/icons";
 @import "base/tags";
+@import "base/hamburger";
 
 @import "layouts/wrapper";
 @import "layouts/header";
@@ -20,8 +22,12 @@
 @import "components/contact-us";
 @import "components/promo";
 @import "components/navigation";
-@import "components/tools";
 
-@import "components/strategies";
+@import "components/tools";
+@import "components/about-us";
+@import "components/footer";
+
+
 
 @import "layouts/columns";
+@import "components/strategies";

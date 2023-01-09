@@ -1,6 +1,6 @@
 .ico {
     cursor: pointer;
-    display: inline-block;;
+    display: inline-block;
 }
 
 .icon-square {
@@ -51,4 +51,30 @@
     background-image: url("../../img/icons/time.svg");
     width: 15px;
     height: 17px;
+}
+
+.ico-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    margin-right: 10px;
+
+}
+
+.ico_phone {
+    background-image: url("../../img/icons/phone.svg");
+    width: 7px;
+    height: 11px;
+}
+
+
+
+.ico_letter {
+    background-image: url("../../img/icons/email.svg");
+    width: 11px;
+    height: 8px;
 }
