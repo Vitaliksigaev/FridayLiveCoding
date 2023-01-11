@@ -13,13 +13,17 @@
     "type": "git",
     "url": "git+https://github.com/Vitaliksigaev/FridayLiveCoding.git"
   },
-  "author": "",
+  "author": "SIGAEV",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vitaliksigaev/FridayLiveCoding/issues"
   },
   "homepage": "https://github.com/Vitaliksigaev/FridayLiveCoding#readme",
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
     "normalize-scss": "^7.0.1",
     "webpack": "^5.75.0"
   },

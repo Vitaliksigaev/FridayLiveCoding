@@ -1,31 +1,72 @@
 import { Article } from "./js/Article";
 import { ArticleModal } from "./js/ArticleModal";
 import { Modal } from "./js/Modal";
+import './sass/style.scss';
 
 
 const data = [
     {
         id: 1,
-        title: 'title1',
-        urlToImage: './src/img/strategies/pic-5.jpg',
-        tags: ['Culture' ],
-        content: 'This is1This is1This is1This is1This is1This is1This is1This is1This is1This is1This is1This is1This is1This is1',
+        title: 'Increasing Prosperity With Positive Thinking',
+        urlToImage: './src/img/strategies/pic-4.jpg',
+        tags: [ 'All', 'Design' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
         date: new Date(),
     },
     {
         id: 2,
-        title: 'title2',
-        urlToImage: './src/img/strategies/pic-2.jpg',
-        tags: ['Art' ],
-        content: 'This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2This is2',
+        title: 'Motivation Is The First Step To Success',
+        urlToImage: './src/img/strategies/pic-5.jpg',
+        tags: [ 'Culture'],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
         date: new Date(),
     },
     {
         id: 3,
-        title: 'title3',
+        title: 'Success Steps For Your Personal Or Business Life',
+        urlToImage: './src/img/strategies/pic-2.jpg',
+        tags: [  'Culture', 'Art' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
+        date: new Date(),
+    },
+    {
+        id: 4,
+        title: 'Increasing Prosperity With Positive Thinking',
+        urlToImage: './src/img/strategies/pic-1.jpg',
+        tags: [ 'Design', 'Culture', 'Art' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
+        date: new Date(),
+    },
+    {
+        id: 5,
+        title: 'Motivation Is The First Step To Success',
+        urlToImage: './src/img/strategies/pic-6.jpg',
+        tags: [ 'Design', 'Culture' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
+        date: new Date(),
+    },
+    {
+        id: 6,
+        title: 'Increasing Prosperity With Positive Thinking',
         urlToImage: './src/img/strategies/pic-4.jpg',
-        tags: ['Design' ],
-        content: 'This is3This is3This is3This is3This is3This is3This is3This is3This is3This is3This is3This is3This is3This is3This is3',
+        tags: [ 'Design', 'Culture', 'Art' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
+        date: new Date(),
+    },
+    {
+        id: 7,
+        title: 'Success Steps For Your Personal Or Business Life',
+        urlToImage: './src/img/strategies/pic-5.jpg',
+        tags: [ 'Design', 'Culture', 'Art' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
+        date: new Date(),
+    },
+    {
+        id: 8,
+        title: 'Increasing Prosperity With Positive Thinking',
+        urlToImage: './src/img/strategies/pic-2.jpg',
+        tags: [ 'Design', 'Culture', 'Art' ],
+        content: 'Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.',
         date: new Date(),
     },
 
@@ -36,7 +77,7 @@ console.log(data);
 
 
 window.onload = function () {
-    console.log ('3');
+    console.log ('5');
     // render
     if(data){
         renderArticlesToDom ();

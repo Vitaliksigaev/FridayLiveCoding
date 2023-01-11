@@ -10,14 +10,19 @@
     }
 }
 
-
+.tools__wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .tools__title {
     max-width: 460px;
-    margin: auto;
+
     text-align: center;
     margin-bottom: 70px;
-    margin: 0 0 16px;
+    margin: auto;
     @include media-mobile {
         margin-bottom: 45px;
     }
@@ -34,6 +39,7 @@
 }
 
 .tool-container {
+    margin-top: 20px;
     @include media-table {
         flex-wrap: wrap;
         .tool {
