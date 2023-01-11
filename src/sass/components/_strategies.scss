@@ -79,3 +79,32 @@
 // .strategies__tags{ 
 //     padding-bottom: 30px;
 // }
+
+.strategy__image {
+    @include media-table {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.article-modal__content {
+    .strategy__image {
+        width: 100%;
+        @include media-table {
+            position: static;
+        }
+    }
+
+    .strategy__date {
+        @include font ($size: 1.3rem, $weight: normal);
+        margin: 0 0 5px;
+    }
+
+    .strategy__name {
+        margin-bottom: 10px;
+    }
+
+    .strategy__text {
+        margin: 0 0 12px;
+    }
+}
