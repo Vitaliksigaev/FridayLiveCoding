@@ -1,0 +1,34 @@
+%transition {
+    transition: all 0.3s ease-out;
+}
+
+%font-primary {
+    font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+%font-add {
+    font-family: 'Poppins', Verdana, sans-serif;
+}
+
+
+
+
+// .block1 {
+//     @extend %transition
+// }
+// .block2 {
+//     @extend %transition
+// }
+
+%custom-scroll {
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 1px grey;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color-violet;
+      border-radius: 10px;
+    }
+  }

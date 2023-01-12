@@ -1,0 +1,51 @@
+.footer__wrapper {
+    display: flex;
+    @include media-table {
+        flex-direction: column;
+    }
+
+}
+
+.footer {
+    padding: 60px 0 60px;
+    @include media-table {
+        padding: 50px 0px;
+    }
+    @include media-mobile{
+        padding: 30px 0 30px;
+    }
+}
+.footer-navigation {
+    flex-grow: 1;
+    padding-left: 150px;
+    @include media-table {
+        padding-left: 0px;
+        margin-top: 35px;    
+    }
+    @include media-mobile{
+        flex-direction: column; 
+    }
+}
+
+.footer-navigation__title {
+    margin:  0 0 15px;
+}
+.footer-navigation__column {
+    @include media-mobile{
+        margin-top: 20px 
+    }
+}
+
+.footer-navigation__links {
+
+    @extend %font-add;
+    a {
+        @extend %transition;
+        @include font( $size: 1.6rem, $height: 3.5rem, $weight: normal);
+        text-decoration: none;
+        color: $color-text;  
+        &:hover {
+            color: $color-primary;
+        }       
+    }
+}

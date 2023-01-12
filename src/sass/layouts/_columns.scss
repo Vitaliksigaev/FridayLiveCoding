@@ -1,0 +1,21 @@
+.layout-4-column {
+    @include columns($width: 20%)
+}
+
+.layout-3-column {
+    @include columns($width: 30%);
+
+    &:after {
+        content: '';
+        display: block;
+        width: 30%;
+    }
+    // @include media-table {
+    //     // width: 48%;
+    //     @include columns($width: 48%);
+    // }
+}
+
+.layout-2-column {
+    @include columns($width: 49%)
+}

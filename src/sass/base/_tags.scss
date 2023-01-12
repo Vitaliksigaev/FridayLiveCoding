@@ -1,0 +1,29 @@
+.tags {
+    display: flex;
+    >* {
+       margin-right: 5px; 
+    }
+}
+
+.tag {
+    padding: 0px 14px;
+    border-radius: 90px;
+    @include font ($size: 1.3rem, $height: 2.8rem, $weight: normal);
+    cursor: pointer;
+    &__selected {
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+        color: $color-light;
+    }
+
+    &__bordered {
+        border: 1px solid $color-border;
+    }
+    &__colored {
+        padding: 3px 14px;
+        background-color: $color-tag;
+    }
+}
+.strategies__tags {
+    padding-bottom: 30px;
+}
