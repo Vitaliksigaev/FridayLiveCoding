@@ -1,7 +1,7 @@
 import { Article } from "./js/Article";
 import { ArticleModal } from "./js/ArticleModal";
 import { Modal } from "./js/Modal";
-import './sass/style.scss';
+// import './sass/style.scss';
 
 
 const data = [
@@ -73,11 +73,11 @@ const data = [
 ]
 
 
-console.log(data);
+// console.log(data);
 
 
 window.onload = function () {
-    console.log ('5');
+    // console.log ('5');
     // render
     if(data){
         renderArticlesToDom ();
@@ -191,6 +191,26 @@ const renderArticleModalWindow = (article) => {
     let modal =  new ArticleModal ('article-modal', article);
     modal.renderModal();
 }
+
+
+
+
+
+const body = document.querySelector('body');
+
+
+const openBurger = () => {
+    const burger = document.querySelector('.hamburger');
+    burger.addEventListener('click', (e) => {
+        burger.classList.toggle('hamburger__active');
+        const menu  = document.querySelector('.header__navigation');
+        menu.classList.toggle('header__navigation__active');  
+        body.classList.toggle('body__over-hidden'); 
+    });
+
+
+}
+openBurger();
 
 // const addTagsClickHandler = () => {
 //     document.querySelector('.strategies__tags').addEventListener('click', (e) => {

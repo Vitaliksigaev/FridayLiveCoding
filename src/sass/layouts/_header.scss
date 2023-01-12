@@ -9,19 +9,19 @@
     justify-content: space-between;
     @include media-table {
         padding-left: 25px;
-        
     }
+    // position: relative;
 }
 
 
 .header__logo-line {
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 .header__buttons {
     @include media-mobile {
         display: none;
     }
-    
 }

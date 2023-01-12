@@ -61,6 +61,13 @@ $image-gap:60px;
 }
 .employer-container {
     padding-right: $image-gap;
+    @include media-table {
+        flex-direction: column;
+        padding-right:0px;
+        .employer__photo {
+            right: 10px;
+        }
+    }
 }
 
 

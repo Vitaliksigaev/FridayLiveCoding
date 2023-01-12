@@ -53,7 +53,7 @@ export class ArticleModal extends Modal {
 
     renderModal() {
         let content = this.generateContent();
-        console.log(content)
+        // console.log(content)
         super.buildModal(content);
     }
 }

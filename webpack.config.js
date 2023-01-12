@@ -13,8 +13,8 @@ module.exports = (env, options) => {
         watch: !isProduction,
         entry: ['./src/index.js', './src/sass/style.scss'],
         output: {
-            path: path.join(__dirname, '/dist'),
-            filename: 'script.js',
+            path: path.join(__dirname, '/dist/'),
+            filename: 'script.js'
         },
 
         module: {
@@ -25,16 +25,30 @@ module.exports = (env, options) => {
                     use: {
                       loader: 'babel-loader',
                       options: {
-                        presets: ['@babel/preset-env']
+                        presets: [
+                          ['@babel/preset-env', { targets: "defaults" }]
+                        ]
                       }
                     }
-                }, {
+                  }, {
                     test: /\.scss$/,
                     use: [
                         MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' 
                     ]
-                }, {
-                    test: /\.(png|svg|jpe?g|gif)$/,
+                },   
+                {
+                    test: /\.svg$/,
+                    loader: 'svg-inline-loader'
+                }, 
+                {
+                    test: /\.(png|jpe?g|gif)$/,
+                    // exclude: /node_modules/,
+                    // loader: 'url-loader',
+                    // options: {
+                    //   limit: 10000,
+                    //   name: '[name].[ext]',
+                    // },
+                    // type: 'asset'
                     use: [
                         {
                             loader: 'file-loader',
@@ -48,7 +62,7 @@ module.exports = (env, options) => {
         },
 
         plugins: [
-            new CleanWebpackPlugin(),
+            // new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({
                 template: 'index.html'
             }),
