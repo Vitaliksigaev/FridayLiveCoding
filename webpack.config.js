@@ -36,24 +36,24 @@ module.exports = (env, options) => {
                         MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' 
                     ]
                 },   
+                // {
+                //     test: /\.svg$/,
+                //     loader: 'svg-inline-loader'
+                // }, 
                 {
-                    test: /\.svg$/,
-                    loader: 'svg-inline-loader'
-                }, 
-                {
-                    test: /\.(png|jpe?g|gif)$/,
+                    test: /\.(png|jpe?g|gif|svg)$/,
                     // exclude: /node_modules/,
                     // loader: 'url-loader',
                     // options: {
                     //   limit: 10000,
                     //   name: '[name].[ext]',
                     // },
-                    // type: 'asset'
-                    use: [
-                        {
-                            loader: 'file-loader',
-                        }
-                    ]
+                    type: 'asset'
+                    // use: [
+                    //     {
+                    //         loader: 'file-loader',
+                    //     }
+                    // ]
                 }, {
                     test: /\.html$/,
                     loader: 'html-loader',
@@ -62,7 +62,7 @@ module.exports = (env, options) => {
         },
 
         plugins: [
-            // new CleanWebpackPlugin(),
+            new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({
                 template: 'index.html'
             }),
